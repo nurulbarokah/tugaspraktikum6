@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <conio.h>
+
+int tambah(x, y);
+int kurang(x, y);
+
+main(){
+	int menu, a[]={1,2,3}, b[]={4,5,6}, c[], i;
+	printf("1. Penjumlahan Larik \n");
+	printf("2. Pengurangan Larik \n");
+	switch(menu){
+		case 1 :
+			for(i=0; i<3; i++){
+		    c[] = tambah(a, b);
+			}
+			for(i=0;i<3;i++){
+				printf("c[%d] : %d", i, c[i]);
+			}
+			break;
+
+		case 2 :
+			for(i=0; i<3; i++){
+		    c[] = kurang(a, b);
+			}
+			for(i=0;i<3;i++){
+				printf("c[%d] : %d", i, c[i]);
+			}
+			break;
+
+		default :
+			printf("Anda Salah Memasukan Menu");
+
+	}
+}
+
+int tambah(x, y)
+{
+    return c[] = x[i]+y[i];
+}
+
+int kurang(x, y)
+{
+    return c[] = x[i]-y[i];
+}
